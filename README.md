@@ -1,7 +1,5 @@
-# algorithms
-Coding Interview Prep - FreeCodeCamp
+# codingInterviewPrep
+
 <br/>
-<a href="https://www.freecodecamp.org/learn/coding-interview-prep">Link</a>
-
-# Q1. Find the Symmetric Difference
-
+<a href="https://www.freecodecamp.org/learn/coding-interview-prep">freecodecamp.org/learn/coding-interview-prep
+</a>
