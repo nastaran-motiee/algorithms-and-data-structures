@@ -40,7 +40,7 @@ function permAlone(str) {
 
         for (let i = 0; i < k; i++) {
             heapPerm(arr, k - 1);
-            //if k is even swap between arr[0] and arr[k-1]
+            //if k is odd swap between arr[0] and arr[k-1]
             //else swap between arr[i] and arr[k-1]
             if (k % 2 === 1) {
                 swap(arr, 0, k - 1);
