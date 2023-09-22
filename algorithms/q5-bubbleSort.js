@@ -1,6 +1,7 @@
 /**
- * bubbleSort function takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
- * @param {int []} array
+ * Bubble Sort works by taking an array of integers as input and returns an array of these integers in sorted order from least to greatest.
+ * Time Complexity: O(n^2)
+ * @param {number[]} array
  * @returns array of integers in sorted order from least to greatest
  */
 function bubbleSort(array) {

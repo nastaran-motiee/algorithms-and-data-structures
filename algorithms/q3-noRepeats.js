@@ -1,8 +1,8 @@
 /**
  * Swap between arr[i], arr[j]
- * @param {Array.<string>} arr
- * @param {int} i
- * @param {int} j
+ * @param {string[]} arr
+ * @param {number} i
+ * @param {number} j
  */
 function swap(arr, i, j) {
   let temp = arr[i];
