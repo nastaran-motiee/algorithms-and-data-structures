@@ -1,11 +1,5 @@
 /**
- * Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array.
- * In this method, a pivot value is chosen in the original array.
- * The array is then partitioned into two subarrays of values less than and greater than the pivot value.
- * We then combine the result of recursively calling the quick sort algorithm on both sub-arrays.
- * This continues until the base case of an empty or single-item array is reached, which we return.
- * The unwinding of the recursive calls return us the sorted array.
- * Time Complexity: O(nlog(n))
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort}
  * @param {number[]} array
  * @param {number} left
  * @param {number} right
@@ -22,7 +16,7 @@ function quickSort(array, left = 0, right = array.length - 1) {
 }
 
 /**
- *
+ * Partition the array using the last element as the pivot
  * @param {number[]} array
  * @param {number} start
  * @param {number} end

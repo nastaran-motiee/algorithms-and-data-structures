@@ -1,5 +1,5 @@
 /**
- * mergeSort
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-merge-sort}
  * @param {number[]} array
  * @returns {number} Sorted array
  */
@@ -16,7 +16,7 @@ function mergeSort(array) {
 }
 
 /**
- * merge
+ * Merge two sorted arrays
  * @param {number[]} arr1 Sorted array
  * @param {number[]} arr2 Sorted array
  * @returns {number[]} Sorted merge of arr1 and arr2

@@ -1,6 +1,5 @@
 /**
- * Bubble Sort works by taking an array of integers as input and returns an array of these integers in sorted order from least to greatest.
- * Time Complexity: O(n^2)
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort }
  * @param {number[]} array
  * @returns array of integers in sorted order from least to greatest
  */

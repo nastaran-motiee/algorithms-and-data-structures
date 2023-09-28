@@ -1,10 +1,7 @@
 /**
- * updateInventory function compares and updates the inventory stored in a 2D array against a second 2D array of a fresh delivery.
- * Update the current existing inventory item quantities (in arr1).
- * If an item cannot be found, adds the new item and quantity into the inventory array.
- * The returned inventory array is in alphabetical order by item.
- * @param {*} arr1
- * @param {*} arr2
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update}
+ * @param {Array.<Array.<(number|string)>>} arr1
+ * @param {Array.<Array.<(number|string)>>} arr2
  * @returns
  */
 function updateInventory(arr1, arr2) {

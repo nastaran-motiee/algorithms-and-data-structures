@@ -1,8 +1,5 @@
 /**
- * Selection sort works by selecting the minimum value in a list and swapping it with the first value in the list.
- * It then starts at the second position, selects the smallest value in the remaining list, and swaps it with the second element.
- * It continues iterating through the list and swapping elements until it reaches the end of the list.
- * Time Complexity: O(n^2)
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-selection-sort}
  * @param {number[]} array
  * @returns {number[]} Sorted array
  */
@@ -24,7 +21,7 @@ function selectionSort(array) {
 }
 
 /**
- *
+ * Swap arr[i], arr[j]
  * @param {number[]} array
  * @param {number} a
  * @param {number} b

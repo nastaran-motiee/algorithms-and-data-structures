@@ -11,7 +11,7 @@ function swap(arr, i, j) {
 }
 
 /**
- permAlone function returns the number of total permutations of the provided string that don't have repeated consecutive letters.
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/no-repeats-please}
  * @param {string} str 
  * @returns 
  */
