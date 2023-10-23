@@ -1,5 +1,7 @@
 /**
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/create-a-set-class}
  * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/perform-a-union-on-two-sets}
+ * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/perform-an-intersection-on-two-sets-of-data}
  */
 class Set {
   constructor() {
@@ -13,12 +15,12 @@ class Set {
   }
   // This method will return all the values in the set
   values() {
-    return Object.values(this.dictionary);
+    return Object.keys(this.dictionary);
   }
   // This method will add an element to the set
   add(element) {
     if (!this.has(element)) {
-      this.dictionary[element] = element;
+      this.dictionary[element] = true;
       this.length++;
       return true;
     }
@@ -35,28 +37,35 @@ class Set {
 
     return false;
   }
-  // This method will return the size o;f the set
+  // This method will return the size of the set
   size() {
     return this.length;
   }
+  // This is our union method
+  union(set) {
+    const newSet = new Set();
+    this.values().forEach((value) => {
+      newSet.add(value);
+    });
+    set.values().forEach((value) => {
+      newSet.add(value);
+    });
 
-  union(setB) {
-    const thisDictValues = this.values();
-    const setBValues = setB.values();
-    const unionSet = new Set();
-    
-    for (let i = 0; i < thisDictValues.length; i++) {
-      unionSet.add(thisDictValues[i]);
-    }
-    for (let i = 0; i < setBValues.length; i++) {
-        unionSet.add(setBValues[i]);
-      }
-      return unionSet;
+    return newSet;
   }
   
+  intersection(setB) {
+    const newSet = new Set();
+    this.values()
+      .filter((val) => setB.has(val))
+      .forEach((val) => newSet.add(val));
+    return newSet;
+  }
 }
+
 const setA = new Set();
+setA.add(1);
 const setB = new Set();
-setA.add(1)
-console.log(setA.union(setB));
-console.log(setA.size());
+setB.add(1);
+setB.add(2);
+console.log(setA.intersection(setB));
