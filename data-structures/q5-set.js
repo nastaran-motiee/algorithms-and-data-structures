@@ -53,7 +53,7 @@ class Set {
 
     return newSet;
   }
-  
+
   intersection(setB) {
     const newSet = new Set();
     this.values()
@@ -61,12 +61,12 @@ class Set {
       .forEach((val) => newSet.add(val));
     return newSet;
   }
-  
-   isSubsetOf(setB){
-    
-     let diffSet = this.difference(this.intersection(setB));
-     return diffSet.size() === 0;
-   }
+
+  isSubsetOf(setB) {
+
+    let diffSet = this.difference(this.intersection(setB));
+    return diffSet.size() === 0;
+  }
 }
 
 const setA = new Set();

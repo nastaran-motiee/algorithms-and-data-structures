@@ -1,5 +1,5 @@
 /**
- * @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update}
+ * @description @see {@link https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update}
  * @param {Array.<Array.<(number|string)>>} arr1
  * @param {Array.<Array.<(number|string)>>} arr2
  * @returns
