@@ -1,5 +1,6 @@
 class Calculator {
     /** 
+     * @see {@link https://leetcode.com/problems/calculator-with-method-chaining/}
      * @param {number} value
      */
     constructor(value) {
